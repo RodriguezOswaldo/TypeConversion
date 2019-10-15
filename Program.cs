@@ -43,6 +43,12 @@ namespace TypeConversion
             john.LastName = "Smith";
             john.Introduce();
 
+            //Calculator Class
+
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 2);
+            Console.WriteLine(result);
+
         }
     }
 }
