@@ -4,6 +4,17 @@ namespace TypeConversion
 {
     class Program
     {
+        public class Person
+        {
+            public string FirstName;
+            public string LastName;
+
+            public void Introduce()
+            {
+                Console.WriteLine("My name is " + FirstName + " " + LastName);
+            }
+        }
+
         static void Main(string[] args)
         {
             /*
@@ -34,6 +45,12 @@ namespace TypeConversion
             {
                 Console.WriteLine("The number is too big to be converted to a byte.");
             }
+
+            //The Object
+            var john = new Person();
+            john.FirstName = "John";
+            john.LastName = "Smith";
+            john.Introduce();
 
         }
     }
