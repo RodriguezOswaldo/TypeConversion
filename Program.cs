@@ -19,6 +19,21 @@ namespace TypeConversion
             var number = "1234";
             int num = Convert.ToInt32(number);
             Console.WriteLine(num);
+            //converting string to byte (byte can only get 232 digits)
+            //Therefore this will throw an error which we can fix by putting it inside a try-catch block.
+            //var number = "1234";
+            //int b = Convert.ToByte(number);
+            //Console.WriteLine(b);
+            try
+            {
+                var number2 = "1234";
+                int num2 = Convert.ToByte(number2);
+                Console.WriteLine(num2);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The number is too big to be converted to a byte.");
+            }
         }
     }
 }
