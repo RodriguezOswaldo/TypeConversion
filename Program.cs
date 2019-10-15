@@ -30,7 +30,7 @@ namespace TypeConversion
                 int num2 = Convert.ToByte(number2);
                 Console.WriteLine(num2);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 Console.WriteLine("The number is too big to be converted to a byte.");
             }
