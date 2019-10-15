@@ -15,6 +15,10 @@ namespace TypeConversion
             //Specifying the cast. (variable type)
             byte b = (byte) i;
             Console.WriteLine(b);
+
+            var number = "1234";
+            int num = Convert.ToInt32(number);
+            Console.WriteLine(num);
         }
     }
 }
